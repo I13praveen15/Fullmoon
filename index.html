@@ -76,7 +76,7 @@
       transition: transform 0.3s, box-shadow 0.3s;
     }
     .gallery-item:hover { transform: scale(1.03); box-shadow: 0 6px 20px rgba(255, 120, 180, 0.6); }
-    .gallery-item img {
+    .gallery-item img, .gallery-item video {
       width: 100%; height: 180px;
       object-fit: cover; border-radius: 12px;
     }
@@ -117,7 +117,7 @@
       .quote { font-size: 1.1rem; }
       .card { flex-direction: column; text-align: center; }
       .gallery { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
-      .gallery-item img { height: 140px; }
+      .gallery-item img, .gallery-item video { height: 140px; }
     }
   </style>
 </head>
@@ -142,16 +142,28 @@
   <div class="page" id="page3">
     <h2 style="color:#ff99cc; font-family:Pacifico, cursive;">📸 Glimpse of Memories</h2>
     <div class="gallery">
-      <div class="gallery-item"><img src="/BRITHDAY/IMAGE/photo1.jpg" alt="Memory 1"/><div class="caption">💖 First smile I’ll never forget</div></div>
-      <div class="gallery-item"><img src="/BRITHDAY/IMAGE/photo2.jpg" alt="Memory 2"/><div class="caption">✨ A day full of sunshine</div></div>
-      <div class="gallery-item"><img src="/BRITHDAY/IMAGE/photo3.jpg" alt="Memory 3"/><div class="caption">🌸 The world felt softer with you</div></div>
-      <div class="gallery-item"><img src="/BRITHDAY/IMAGE/photo4.jpg" alt="Memory 4"/><div class="caption">🌙 A night I’ll always cherish</div></div>
-      <div class="gallery-item"><img src="/BRITHDAY/IMAGE/photo5.jpg" alt="Memory 5"/><div class="caption">🎶 Moments that sing forever</div></div>
-      <div class="gallery-item"><img src="/BRITHDAY/IMAGE/photo6.jpg" alt="Memory 6"/><div class="caption">🌈 Your laughter, my favorite melody</div></div>
-      <div class="gallery-item"><img src="/BRITHDAY/IMAGE/photo7.jpg" alt="Memory 7"/><div class="caption">🌺 Love wrapped in simplicity</div></div>
-      <div class="gallery-item"><img src="/BRITHDAY/IMAGE/photo8.jpg" alt="Memory 8"/><div class="caption">☀️ A memory glowing like the sun</div></div>
-      <div class="gallery-item"><img src="/BRITHDAY/IMAGE/photo9.jpg" alt="Memory 9"/><div class="caption">💫 Little things, big feelings</div></div>
-      <div class="gallery-item"><img src="/BRITHDAY/IMAGE/photo10.jpg" alt="Memory 10"/><div class="caption">❤️ Forever etched in my heart</div></div>
+      <div class="gallery-item"><img src="/Fullmoon/IMAGE/IMG_5278.jpeg" alt="Memory 1"/><div class="caption">💖 First smile I’ll never forget</div></div>
+      <div class="gallery-item"><img src="/Fullmoon/IMAGE/IMG_5258.jpeg" alt="Memory 2"/><div class="caption">✨ A day full of sunshine</div></div>
+      <div class="gallery-item"><img src="/Fullmoon/IMAGE/IMG_5260.jpeg" alt="Memory 3"/><div class="caption">🌸 The world felt softer with you</div></div>
+      <div class="gallery-item"><img src="/Fullmoon/IMAGE/IMG_5261.jpeg" alt="Memory 4"/><div class="caption">🌙 A night I’ll always cherish</div></div>
+      <!-- Changed to click & play video -->
+      <div class="gallery-item">
+        <video src="/Fullmoon/IMAGE/Snapchat-848800853.mp4" controls poster="/Fullmoon/IMAGE/video1-thumbnail.jpg"></video>
+        <div class="caption">🎶 Moments that sing forever</div>
+      </div>
+      <!-- Changed to click & play video -->
+      <div class="gallery-item">
+        <video src="/Fullmoon/IMAGE/IMG_1041.mp4" controls poster="/Fullmoon/IMAGE/video2-thumbnail.jpg"></video>
+        <div class="caption">🌈 Your laughter, my favorite melody</div>
+      </div>
+      <div class="gallery-item"><img src="/Fullmoon/IMAGE/IMG_5279.jpeg" alt="Memory 7"/><div class="caption">🌺 Love wrapped in simplicity</div></div>
+      <!-- THIS ONE CHANGED TO VIDEO -->
+      <div class="gallery-item">
+        <video src="/Fullmoon/IMAGE/IMG_9999.mp4" controls poster="/Fullmoon/IMAGE/video3-thumbnail.jpg"></video>
+        <div class="caption">☀️ A memory glowing like the sun</div>
+      </div>
+      <div class="gallery-item"><img src="/Fullmoon/IMAGE/IMG_5262.jpeg" alt="Memory 9"/><div class="caption">💫 Little things, big feelings</div></div>
+      <div class="gallery-item"><img src="/Fullmoon/IMAGE/IMG_5277.jpeg" alt="Memory 10"/><div class="caption">❤️ Forever etched in my heart</div></div>
     </div>
     <button class="btn" style="margin-top: 20px;" onclick="goToPage(4)">Next</button>
   </div>
@@ -177,7 +189,7 @@
   <div class="page" id="page5">
     <h2 style="color:#ff99cc; font-family:Pacifico, cursive;">💌 Birthday Message</h2>
     <div class="card">
-      <img src="/BRITHDAY/IMAGE/profile.jpg" alt="Birthday Pic" />
+      <img src="/Fullmoon/IMAGE/IMG_5257.jpeg" alt="Birthday Pic" />
       <div class="card-content">
         <p>✨ Wishing you a day full of laughter, love, and the gentle magic you bring. Happy Birthday Pavithra 🌸 You’re truly one of a kind 💖🎁</p>
       </div>
@@ -222,10 +234,4 @@
   </script>
 </body>
 </html>
-
- 
-
-
-
-
 
